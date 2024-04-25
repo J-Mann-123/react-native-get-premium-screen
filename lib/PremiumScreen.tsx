@@ -62,6 +62,8 @@ interface IPremiumScreenProps {
   disableCloseButton?: boolean;
   ImageComponent?: React.ReactChild;
   TextComponent?: React.ReactChild;
+  mockPlans?: IPlan[];
+  mockFeatures?: string[];
   logoImageSource?: ImageSourcePropType;
   checkImageSource?: ImageSourcePropType;
   closeButtonImageSource?: ImageSourcePropType;
@@ -104,6 +106,20 @@ const PremiumScreen: React.FC<IPremiumScreenProps> = ({
   TextComponent,
   onClosePress,
   onPlanSelect,
+  mockPlans = [
+    { title: "Monthly Plan", price: "$9.99" },
+    {
+      title: "Annual Plan",
+      price: "$95.99",
+      discountPrice: "$120",
+      discountText: "Get 20% OFF",
+    },
+  ],
+  mockFeatures = [
+    "Unlimited monthly posts",
+    "Personalized activity insights",
+    "Advanced promotion tools",
+  ],
   ...rest
 }) => {
   return (
