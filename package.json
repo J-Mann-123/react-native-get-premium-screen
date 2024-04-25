@@ -1,5 +1,5 @@
 {
-  "name": "@j-mann-123/react-native-get-premium-screen",
+  "name": "@jamesmann/react-native-get-premium-screen",
   "version": "0.1.1",
   "description": "Easy to use and fully customizable get premium screen for React Native",
   "main": "./build/dist/PremiumScreen.js",
